@@ -1,0 +1,21 @@
+[project]
+name = "consumer-lib"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aio-pika>=9.5.5",
+]
+
+[tool.ruff]
+line-length = 100  
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["ALL"]  
+ignore = [
+    "E501", "D", "UP035", "ANN401",
+    "B010", "B009", "SIM117", "EM101",
+    "TRY003",
+]  
